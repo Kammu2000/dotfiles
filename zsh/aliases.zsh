@@ -1,5 +1,4 @@
 # git
-alias g="git"
 alias gst="git status"
 alias ga="git add"
 alias gaa="git add ."
