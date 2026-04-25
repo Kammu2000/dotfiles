@@ -1,0 +1,6 @@
+.clangd
+.lazy.lua
+scratch.txt 
+CLAUDE.local.md
+**/.claude/settings.local.json
+mise.toml
