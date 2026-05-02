@@ -1,4 +1,5 @@
 # git
+alias lg="lazygit"
 alias gst="git status"
 alias ga="git add"
 alias gaa="git add ."
@@ -8,6 +9,11 @@ alias gco="git checkout"
 alias gb="git branch"
 alias gd="git diff"
 alias gcp="git cherry-pick"
+alias gl="git log"
+alias gf="git fetch"
+alias grhh="git reset --hard"
+alias grb="git rebase"
+alias g="git"
 
 # other useful
 alias zshconfig="nvim ~/.zshrc"

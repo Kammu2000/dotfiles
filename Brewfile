@@ -5,6 +5,9 @@ brew "fd"
 brew "fzf"
 brew "bat"
 brew "neovim"
+brew "zoxide"
+brew "lazygit"
+brew "yazi ffmpeg sevenzip jq poppler resvg imagemagick"
 
 # dev tools
 brew "mise"
