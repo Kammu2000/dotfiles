@@ -47,3 +47,7 @@ chmod +x scripts/install.sh
 chmod +x scripts/setup.sh
 ./scripts/install.sh
 ./scripts/setup.sh
+```
+
+- Add `source ~/dotfiles/zsh/main.zsh` in your `.zshrc`
+

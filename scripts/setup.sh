@@ -14,7 +14,12 @@ ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml # starship config file
 ln -sfn "$HOME/dotfiles/git" "$HOME/.config/git"
 
 # mise
-mkdir -p "$HOME/.config/mise"
-ln -sf "$HOME/dotfiles/mise/config.toml" "$HOME/.config/mise/config.toml"
+ln -sfn "$HOME/dotfiles/mise" "$HOME/.config/mise"
+
+# kitty
+ln -sfn "$HOME/dotfiles/kitty" "$HOME/.config/kitty"
+
+# nvim
+ln -sfn "$HOME/dotfiles/nvim" "$HOME/.config/nvim"
 
 echo "Done."
