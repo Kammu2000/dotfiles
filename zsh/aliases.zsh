@@ -16,6 +16,7 @@ alias grb="git rebase"
 alias g="git"
 
 # other useful
+alias y="yazi"
 alias zshconfig="nvim ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias battery="pmset -g batt"
