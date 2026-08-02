@@ -25,7 +25,6 @@ cask "font-jetbrains-mono"
 
 # apps
 cask "kitty"
-cask "alt-tab"
-cask "alfred"
+cask "raycast"
 cask "notion"
 cask "google-chrome"
