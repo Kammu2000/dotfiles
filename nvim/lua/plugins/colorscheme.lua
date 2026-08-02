@@ -4,7 +4,7 @@ return {
     name = "tokyonight",
     priority = 1000,
     opts = {
-      style = "moon",
+      -- style = "moon",
       styles = {
         keywords = { italic = false },
         comments = { italic = true },

@@ -1,9 +1,13 @@
 return {
   "neovim/nvim-lspconfig",
+
   opts = {
-    servers = { eslint = {} },
+    servers = {
+      eslint = {},
+    },
+
     setup = {
-      eslint = function()
+      eslint = function(_, opts)
         Snacks.util.lsp.on({}, function(buf, client)
           if client.name == "eslint" then
             client.server_capabilities.documentFormattingProvider = true

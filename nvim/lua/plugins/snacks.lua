@@ -1,12 +1,45 @@
+-- Code to enable terminal on right side
 return {
   "folke/snacks.nvim",
-  keys = {
-    {
-      "<leader>tt",
-      function()
-        Snacks.terminal("zsh", { win = { border = "rounded" } })
-      end,
-      desc = "Toggle Floating Terminal",
+  opts = {
+    dashboard = {
+      preset = {
+        header = [[
+
+███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
+████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
+██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
+██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
+██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
+╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
+
+          ]],
+
+        keys = {},
+      },
+    },
+    terminal = {
+      win = {
+        position = "right",
+        style = "terminal",
+        width = 0.5,
+      },
+      auto_insert = true, -- key: always enter insert on focus
     },
   },
 }
+
+-- return {
+--   "folke/snacks.nvim",
+--   opts = {
+--     terminal = {
+--       win = {
+--         style = "float",
+--         border = "rounded",
+--         backdrop = 90,
+--         width = 0.95,
+--         height = 0.95,
+--       },
+--     },
+--   },
+-- }
