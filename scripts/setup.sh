@@ -2,12 +2,13 @@
 
 echo "Setting up dotfiles..."
 
+mkdir -p "$HOME/.config"
+
 # symlinks
 
 # zsh
+rm -f "$HOME/.zsh_plugins.txt"
 ln -sf "$HOME/dotfiles/zsh/plugins.txt" "$HOME/.zsh_plugins.txt" # antidote .zsh_plugins.txt file
-
-mkdir -p "$HOME/.config"
 
 # git
 rm -rf ~/.config/git
@@ -30,9 +31,15 @@ rm -rf ~/.config/nvim
 ln -sfn "$HOME/dotfiles/nvim" "$HOME/.config/nvim"
 
 # aerospace
+rm -f ~/.aerospace.toml
 ln -sf ~/dotfiles/aerospace.toml ~/.aerospace.toml
 
 # starship
-ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml # starship config file
+rm -f ~/.config/starship.toml
+ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
+
+# tmux
+rm -f ~/.tmux.conf
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 echo "Done."
