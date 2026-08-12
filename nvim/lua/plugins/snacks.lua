@@ -18,28 +18,23 @@ return {
         keys = {},
       },
     },
+    -- terminal = {
+    --   win = {
+    --     position = "right",
+    --     style = "terminal",
+    --     width = 0.5,
+    --   },
+    --   auto_insert = true, -- key: always enter insert on focus
+    -- },
+
     terminal = {
       win = {
-        position = "right",
-        style = "terminal",
-        width = 0.5,
+        style = "float",
+        border = "rounded",
+        backdrop = 90,
+        width = 0.95,
+        height = 0.95,
       },
-      auto_insert = true, -- key: always enter insert on focus
     },
   },
 }
-
--- return {
---   "folke/snacks.nvim",
---   opts = {
---     terminal = {
---       win = {
---         style = "float",
---         border = "rounded",
---         backdrop = 90,
---         width = 0.95,
---         height = 0.95,
---       },
---     },
---   },
--- }
