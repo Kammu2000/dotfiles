@@ -16,9 +16,9 @@ alias grb="git rebase"
 alias g="git"
 
 # other useful
-alias dv='NVIM_APPNAME=nvim-deepanshu nvim'
+alias lv='NVIM_APPNAME=nvim-lazy nvim'
 alias y="yazi"
-alias zshconfig="dv ~/.zshrc"
+alias zshconfig="nvim ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias battery="pmset -g batt"
 alias rg="rg --hyperlink-format=kitty"
