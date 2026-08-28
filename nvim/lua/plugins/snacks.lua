@@ -66,6 +66,13 @@ return {
 				end,
 				desc = "Projects",
 			},
+			{
+				"<leader>fm",
+				function()
+					Snacks.picker.marks()
+				end,
+				desc = "Marks",
+			},
 
 			-- Grep
 			{

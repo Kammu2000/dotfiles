@@ -22,10 +22,6 @@ ln -sfn "$HOME/dotfiles/mise" "$HOME/.config/mise"
 rm -rf ~/.config/kitty
 ln -sfn "$HOME/dotfiles/kitty" "$HOME/.config/kitty"
 
-# alacritty
-rm -rf ~/.config/alacritty
-ln -sfn "$HOME/dotfiles/alacritty" "$HOME/.config/alacritty"
-
 # nvim
 rm -rf ~/.config/nvim
 ln -sfn "$HOME/dotfiles/nvim" "$HOME/.config/nvim"
@@ -37,9 +33,5 @@ ln -sf ~/dotfiles/aerospace.toml ~/.aerospace.toml
 # starship
 rm -f ~/.config/starship.toml
 ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
-
-# tmux
-rm -f ~/.tmux.conf
-ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 echo "Done."

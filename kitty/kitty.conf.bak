@@ -6,7 +6,7 @@ adjust_column_width 0
 modify_font cell_height 117%
 
 # BEGIN_KITTY_THEME
-# Tokyo Night Moon
+# Tokyo Night Storm
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -34,6 +34,7 @@ cursor_stop_blinking_after 0
 remember_window_size yes
 
 macos_option_as_alt yes
+enable_remote_control yes
 
 # Vim-style pane navigation (not using ctrl to avoid conflict with nvim)
 map alt+h neighboring_window left
