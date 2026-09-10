@@ -10,6 +10,6 @@ source ~/dotfiles/zsh/exports.zsh
 source ~/dotfiles/zsh/functions.zsh
 
 # prompt
-eval "$(zoxide init zsh)"
 eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
