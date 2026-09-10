@@ -44,6 +44,16 @@ return {
 			pyright = {},
 			vtsls = {},
 			eslint = {},
+
+			rust_analyzer = {
+				settings = {
+					["rust-analyzer"] = {
+						cargo = { allFeatures = true },
+						checkOnSave = true,
+						check = { command = "clippy" },
+					},
+				},
+			},
 		},
 
 		-- Empty by default. A project's `.lazy.lua` can populate this,

@@ -29,6 +29,7 @@ return {
 			"javascript",
 			"typescript",
 			"tsx",
+			"rust",
 
 			-- Commonly useful everywhere else.
 			"bash",

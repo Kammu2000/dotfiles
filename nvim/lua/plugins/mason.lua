@@ -13,6 +13,7 @@ return {
 			"vtsls",
 			"lua-language-server",
 			"eslint-lsp",
+			"rust-analyzer",
 
 			-- Formatters (used in conform.lua)
 			"stylua",
