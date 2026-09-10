@@ -1,5 +1,5 @@
 format = """
-$directory$git_branch$nodejs$python
+$directory$git_branch$nodejs
 $character
 """
 
@@ -20,7 +20,7 @@ symbol = "⬢ node "
 style = "green"
 
 # python version
-[python]
-format = "[$symbol($version )]($style)"
-symbol = "🐍 python "
-style = "yellow"
+# [python]
+# format = "[$symbol($version )]($style)"
+# symbol = "🐍 python "
+# style = "yellow"
