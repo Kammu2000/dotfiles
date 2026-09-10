@@ -19,12 +19,18 @@ emcc_setup() {
 
 # git branch switch using fzf
 gcb() {
-  local branch
-  branch=$(git branch | SHELL=/bin/sh fzf | tr -d '[:space:]')
+    local branch
 
-  if [[ -n "$branch" ]]; then
-    git checkout "${branch#* }" # strips the "*" prefix if it's the current branch
-  fi
+    branch=$(
+        git branch --format='%(refname:short)' |
+        fzf \
+            --height=50% \
+            --prompt='Checkout branch > ' \
+            --preview='git log --oneline --decorate -10 {}' \
+            --preview-window=right:65%
+    )
+
+    [[ -n "$branch" ]] && git checkout "$branch"
 }
 
 # multi branch deletion
@@ -35,7 +41,7 @@ gbd() {
         git branch --format='%(refname:short)' |
         grep -v "^$(git branch --show-current)$" |
         fzf --multi \
-            --height=60% \
+            --height=50% \
             --prompt='Delete branches > ' \
             --preview='git log --oneline --decorate -10 {}' \
             --preview-window=right:65%:wrap
