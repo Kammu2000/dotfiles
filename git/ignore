@@ -1,5 +1,6 @@
 .clangd
 .lazy.lua
+.husky
 scratch.txt 
 CLAUDE.local.md
 **/.claude/settings.local.json
